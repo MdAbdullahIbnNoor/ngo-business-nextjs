@@ -45,7 +45,11 @@ export default function BlogList({ initialPosts }: { initialPosts: any[] }) {
                                 <div className="mb-4 flex items-center gap-4 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
                                     <span className="flex items-center gap-1">
                                         <Calendar className="h-3 w-3" />
-                                        {new Date(post.publishedAt).toLocaleDateString()}
+                                        {new Date(post.publishedAt).toLocaleDateString('en-GB', {
+                                            day: '2-digit',
+                                            month: '2-digit',
+                                            year: 'numeric'
+                                        })}
                                     </span>
                                     <span className="flex items-center gap-1">
                                         <Clock className="h-3 w-3" /> {post.readingTime} min read

@@ -1,5 +1,5 @@
-import { connectDB } from '@/app/lib/db';
-import Post from '@/app/lib/models/Post';
+import { connectDB } from '@/lib/db';
+import Post from '@/lib/models/Post';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, Share2, Calendar, User, Clock, Tag } from 'lucide-react';
