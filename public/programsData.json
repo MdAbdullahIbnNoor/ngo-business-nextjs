@@ -1,0 +1,122 @@
+[
+    {
+        "id": "clean-water",
+        "title": "Clean Water Initiative",
+        "category": "Sustainability",
+        "image": "https://images.unsplash.com/photo-1654220691341-be23a137bd0c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Installing sustainable water filtration systems in underserved schools across Dhaka.",
+        "longDescription": "In many parts of Dhaka, school children lack access to safe drinking water, leading to severe health issues and high absenteeism. Our Clean Water Initiative installs industrial-grade UV filtration systems and provides intensive maintenance training to school staff to ensure long-term sustainability. By securing a clean water source, we are creating a foundation for better health and more consistent education for thousands of children.",
+        "status": "Active",
+        "impact": "12 Schools reached",
+        "beneficiaries": "8,500+ Students",
+        "fundingGoal": "৳1,500,000",
+        "raised": "৳950,000",
+        "location": "Mirpur & Korail, Dhaka",
+        "startDate": "Jan 2024",
+        "duration": "3 Years (Phase 1)",
+        "goals": [
+            "Install 50 filters by the end of 2026",
+            "Reduce water-borne diseases in target areas by 40%",
+            "Train 100 community water ambassadors"
+        ],
+        "highlights": [
+            "Zero-waste filtration technology",
+            "Community-led maintenance model",
+            "Real-time water quality monitoring"
+        ],
+        "testimonial": {
+            "quote": "Since the filter was installed, student attendance has increased by 15% because fewer children are falling ill.",
+            "author": "Headmaster, Korail Primary"
+        }
+    },
+    {
+        "id": "youth-skills-lab",
+        "title": "Youth Skills Lab",
+        "category": "Education",
+        "image": "https://images.unsplash.com/photo-1719159381981-1327b22aff9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Providing free technical training in web development and ethical business practices.",
+        "longDescription": "The Youth Skills Lab bridges the digital divide by offering intensive 6-month bootcamps for underprivileged youth. We focus on high-demand tech stacks like Next.js and Tailwind CSS, combined with critical soft skills like ethical leadership, English for business, and project management. We don't just teach coding; we build professional pathways that allow youth to compete in the global digital economy.",
+        "status": "Enrolling",
+        "impact": "250+ Students graduated",
+        "beneficiaries": "Underprivileged Youth (18-25)",
+        "fundingGoal": "৳2,500,000",
+        "raised": "৳1,800,000",
+        "location": "Banani Training Center",
+        "startDate": "June 2023",
+        "duration": "6-Month Batches",
+        "goals": [
+            "Graduate 500 students annually with market-ready skills",
+            "Secure 70% job placement for graduates within 6 months",
+            "Launch an incubator for 10 student-led social enterprises"
+        ],
+        "highlights": [
+            "Industry-expert mentorship",
+            "Free laptop lending program",
+            "Direct pipeline to local tech startups"
+        ],
+        "testimonial": {
+            "quote": "I went from having no computer experience to working as a junior developer in just six months.",
+            "author": "Sultana, Batch 4 Graduate"
+        }
+    },
+    {
+        "id": "ethical-trade-network",
+        "title": "Ethical Trade Network",
+        "category": "Economic",
+        "image": "https://images.unsplash.com/photo-1768055104895-e6185762f2a9?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Connecting local artisans directly with global markets to ensure fair wages.",
+        "longDescription": "Small-scale artisans in rural Bangladesh often lose up to 70% of their potential profit to middlemen. Our network provides a digital platform, quality control training, and logistics support that allows local craftsmen and women to sell their handmade products directly to global customers. We ensure that 100% of the fair trade price reaches the maker, enabling them to reinvest in their families and community infrastructure.",
+        "status": "Active",
+        "impact": "45 Artisans supported",
+        "beneficiaries": "Rural Crafting Families",
+        "fundingGoal": "৳1,200,000",
+        "raised": "৳1,100,000",
+        "location": "Dhaka Division & Rural Clusters",
+        "startDate": "Ongoing",
+        "duration": "Indefinite",
+        "goals": [
+            "Expand to 200+ artisans by next year",
+            "Increase artisan average household income by 50%",
+            "Establish a certified organic material supply chain"
+        ],
+        "highlights": [
+            "Transparent supply chain tracking",
+            "Direct-to-consumer digital marketplace",
+            "Zero-interest micro-loans for tools"
+        ],
+        "testimonial": {
+            "quote": "For the first time, my work is being valued properly. I can now afford to send my son to a better school.",
+            "author": "Anowar, Master Woodcarver"
+        }
+    },
+    {
+        "id": "urban-greenery",
+        "title": "Urban Greenery Project",
+        "category": "Environment",
+        "image": "https://images.unsplash.com/photo-1542800952-e5471ed41326?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Transforming rooftop spaces into productive urban gardens to combat heat and hunger.",
+        "longDescription": "As one of the world's most densely populated cities, Dhaka suffers from extreme 'urban heat island' effects. This project incentivizes and subsidizes the creation of rooftop gardens that provide fresh, pesticide-free produce for families. Beyond food security, these green spaces significantly lower building temperatures and improve local air quality, turning gray concrete into a living, breathing ecosystem.",
+        "status": "Active",
+        "impact": "85 Rooftops converted",
+        "beneficiaries": "350+ Family Members",
+        "fundingGoal": "৳900,000",
+        "raised": "৳450,000",
+        "location": "Old Dhaka & Dhanmondi",
+        "startDate": "Feb 2024",
+        "duration": "Permanent Installation",
+        "goals": [
+            "Establish 1,000 rooftop gardens by 2027",
+            "Conduct monthly urban farming workshops for city dwellers",
+            "Reduce local rooftop temperatures by average 3-5 degrees"
+        ],
+        "highlights": [
+            "Hydroponic and organic soil options",
+            "Rainwater harvesting integration",
+            "Community seed-sharing network"
+        ],
+        "testimonial": {
+            "quote": "My roof used to be too hot to touch. Now it provides us with fresh vegetables every single week.",
+            "author": "Mrs. Begum, Dhanmondi Resident"
+        }
+    }
+]

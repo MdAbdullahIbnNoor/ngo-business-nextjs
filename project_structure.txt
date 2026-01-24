@@ -1,0 +1,36 @@
+ngo-business-site/
+├─ app/
+│  ├─ (public)/
+│  │  ├─ page.tsx                # Home
+│  │  ├─ about/page.tsx
+│  │  ├─ blog/page.tsx           # List posts
+│  │  ├─ blog/[slug]/page.tsx    # Post detail
+│  │  ├─ contact/page.tsx
+│  ├─ (admin)/
+│  │  ├─ admin/layout.tsx
+│  │  ├─ admin/page.tsx          # Dashboard
+│  │  ├─ admin/posts/page.tsx    # CRUD list
+│  │  ├─ admin/posts/new/page.tsx
+│  │  ├─ admin/posts/[id]/page.tsx
+│  │  ├─ admin/contacts/page.tsx
+│  ├─ api/
+│  │  ├─ auth/[...nextauth]/route.ts
+│  │  ├─ posts/route.ts          # POST (create), GET (list)
+│  │  ├─ posts/[id]/route.ts     # GET, PUT, DELETE
+│  │  ├─ contact/route.ts        # POST (submit), GET (admin)
+│  ├─ layout.tsx
+│  ├─ globals.css
+├─ components/
+│  ├─ Navbar.tsx
+│  ├─ Footer.tsx
+│  ├─ PostCard.tsx
+│  ├─ AdminGuard.tsx
+├─ lib/
+│  ├─ db.ts
+│  ├─ models/
+│  │  ├─ Post.ts
+│  │  ├─ Contact.ts
+│  ├─ auth.ts
+├─ public/
+│  ├─ logo.svg
+└─ tailwind.config.ts
