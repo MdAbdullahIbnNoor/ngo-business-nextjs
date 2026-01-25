@@ -99,43 +99,42 @@ export default async function AboutPage() {
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
-                  <div className="p-6">
-                    {/* Flex container for Name and Icons */}
-                    <div className="flex items-center justify-between gap-2">
-                      <h3 className="text-2xl font-black text-slate-900 dark:text-white leading-tight">
+                  <div className="p-4">
+                    {/* Header with Name and Icons */}
+                    <div className="flex items-start justify-between gap-2">
+                      <h3 className="text-xl font-black text-slate-900 dark:text-white leading-tight">
                         {m.name}
                       </h3>
 
-                      <div className="flex gap-2 shrink-0">
-                        {m.socials?.linkedin && m.socials.linkedin !== "#" && (
+                      {/* Social Icons Container */}
+                      <div className="flex gap-3 pt-1 shrink-0">
+                        {m.socials?.linkedin && (
                           <a
-                            href={m.socials.linkedin}
+                            href={m.socials.linkedin === "#" ? undefined : m.socials.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-slate-400 hover:text-[#0077b5] transition-colors"
-                            title="LinkedIn Profile"
+                            className="text-slate-500 hover:text-[#0077b5] transition-colors"
                           >
-                            <Linkedin size={20} strokeWidth={2.5} />
+                            <Linkedin size={20} />
                           </a>
                         )}
-                        {m.socials?.twitter && m.socials.twitter !== "#" && (
+                        {m.socials?.twitter && (
                           <a
-                            href={m.socials.twitter}
+                            href={m.socials.twitter === "#" ? undefined : m.socials.twitter}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-slate-400 hover:text-[#1DA1F2] transition-colors"
-                            title="Twitter Profile"
+                            className="text-slate-500 hover:text-[#1DA1F2] transition-colors"
                           >
-                            <Twitter size={20} strokeWidth={2.5} />
+                            <Twitter size={20} />
                           </a>
                         )}
                       </div>
                     </div>
 
-                    <p className="text-sm font-bold uppercase tracking-widest text-primary mt-1">
+                    <p className="text-xs font-bold uppercase tracking-widest text-primary mt-1">
                       {m.role}
                     </p>
-                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground line-clamp-3">
+                    <p className="mt-4 text-xs leading-relaxed text-muted-foreground line-clamp-3">
                       {m.bio}
                     </p>
                   </div>
