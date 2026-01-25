@@ -10,7 +10,7 @@ export default async function AdminContacts() {
   const contacts = await getContacts();
 
   return (
-    <section className="mx-auto max-w-5xl px-6 py-12 mt-24">
+    <section className="mx-auto max-w-5xl px-6 py-12">
       <div className="border-b pb-6">
         <h1 className="text-3xl font-black">Contact Submissions</h1>
         <p className="text-slate-500">Messages received from the website contact form.</p>

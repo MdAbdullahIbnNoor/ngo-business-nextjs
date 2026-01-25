@@ -1,9 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // If the URL starts with /admin, don't render anything
+  if (pathname.startsWith('/admin')) {
+    return null;
+  }
+
+
   return (
     <footer className="bg-secondary/30 border-t border-border mt-auto">
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">

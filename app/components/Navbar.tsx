@@ -5,8 +5,17 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./ThemeToggle";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  // If the URL starts with /admin, don't render anything
+  if (pathname.startsWith('/admin')) {
+    return null;
+  }
+
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

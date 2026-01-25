@@ -74,7 +74,7 @@ export default async function AdminHome() {
   ];
 
   return (
-    <section className="min-h-screen bg-slate-50 dark:bg-slate-950 p-6 pt-24 md:p-12 md:pt-32">
+    <section className="min-h-screen bg-slate-50 dark:bg-slate-950 p-6 md:p-12">
       <div className="mx-auto max-w-6xl">
 
         {/* Header */}
