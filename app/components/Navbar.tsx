@@ -8,14 +8,8 @@ import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  // 1. Declare all hooks at the very top
   const pathname = usePathname();
-
-  // If the URL starts with /admin, don't render anything
-  if (pathname.startsWith('/admin')) {
-    return null;
-  }
-
-
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -26,6 +20,11 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // 2. Perform conditional returns AFTER hooks
+  if (pathname.startsWith('/admin')) {
+    return null;
+  }
 
   return (
     <header

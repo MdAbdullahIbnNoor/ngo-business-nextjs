@@ -1,36 +1,93 @@
 ngo-business-site/
 ├─ app/
-│  ├─ (public)/
-│  │  ├─ page.tsx                # Home
-│  │  ├─ about/page.tsx
-│  │  ├─ blog/page.tsx           # List posts
-│  │  ├─ blog/[slug]/page.tsx    # Post detail
-│  │  ├─ contact/page.tsx
 │  ├─ (admin)/
-│  │  ├─ admin/layout.tsx
-│  │  ├─ admin/page.tsx          # Dashboard
-│  │  ├─ admin/posts/page.tsx    # CRUD list
-│  │  ├─ admin/posts/new/page.tsx
-│  │  ├─ admin/posts/[id]/page.tsx
-│  │  ├─ admin/contacts/page.tsx
+│  │  └─ admin/
+│  │     ├─ contacts/
+│  │     │  └─ page.tsx          # Contact inquiries
+│  │     ├─ donations/
+│  │     │  └─ page.tsx          # Donation records
+│  │     ├─ posts/
+│  │     │  ├─ [id]/
+│  │     │  │  └─ page.tsx       # Edit post
+│  │     │  ├─ new/
+│  │     │  │  └─ page.tsx       # Create post
+│  │     │  └─ page.tsx          # List posts
+│  │     ├─ team/
+│  │     │  ├─ [id]/
+│  │     │  ├─ new/
+│  │     │  └─ page.tsx          # Manage team
+│  │     ├─ volunteers/
+│  │     │  ├─ [id]/
+│  │     │  └─ page.tsx          # Manage volunteers
+│  │     ├─ layout.tsx           # Admin layout
+│  │     └─ page.tsx             # Admin Dashboard
+│  ├─ (public)/
+│  │  ├─ about/
+│  │  │  └─ page.tsx
+│  │  ├─ blog/
+│  │  │  ├─ [slug]/
+│  │  │  │  └─ page.tsx          # Blog post detail
+│  │  │  └─ page.tsx             # Blog list
+│  │  ├─ contact/
+│  │  │  └─ page.tsx
+│  │  ├─ donate/
+│  │  │  └─ page.tsx
+│  │  ├─ programs/
+│  │  │  ├─ [slug]/
+│  │  │  └─ page.tsx
+│  │  ├─ volunteer/
+│  │  │  └─ page.tsx
+│  │  └─ page.tsx                # Home page
 │  ├─ api/
-│  │  ├─ auth/[...nextauth]/route.ts
-│  │  ├─ posts/route.ts          # POST (create), GET (list)
-│  │  ├─ posts/[id]/route.ts     # GET, PUT, DELETE
-│  │  ├─ contact/route.ts        # POST (submit), GET (admin)
-│  ├─ layout.tsx
+│  │  ├─ auth/[...nextauth]/
+│  │  │  └─ route.ts
+│  │  ├─ contact/
+│  │  │  └─ route.ts
+│  │  ├─ posts/
+│  │  │  ├─ [id]/
+│  │  │  │  └─ route.ts
+│  │  │  └─ route.ts
+│  │  └─ ... (other API routes)
+│  ├─ components/                # Application Components
+│  │  ├─ AdminGuard.tsx
+│  │  ├─ AdminSidebar.tsx
+│  │  ├─ BlogFilters.tsx
+│  │  ├─ BlogList.tsx
+│  │  ├─ DonationModal.tsx
+│  │  ├─ Footer.tsx
+│  │  ├─ Navbar.tsx
+│  │  ├─ Providers.tsx
+│  │  ├─ ThemeProvider.tsx
+│  │  ├─ ThemeToggle.tsx
+│  │  └─ VolunteerList.tsx
 │  ├─ globals.css
+│  └─ layout.tsx
 ├─ components/
-│  ├─ Navbar.tsx
-│  ├─ Footer.tsx
-│  ├─ PostCard.tsx
-│  ├─ AdminGuard.tsx
+│  └─ ui/                        # Shadcn UI Components
+│     ├─ accordion.tsx
+│     ├─ button.tsx
+│     ├─ card.tsx
+│     ├─ dialog.tsx
+│     ├─ dropdown-menu.tsx
+│     ├─ input.tsx
+│     ├─ navigation-menu.tsx
+│     ├─ textarea.tsx
+│     └─ ...
 ├─ lib/
-│  ├─ db.ts
 │  ├─ models/
-│  │  ├─ Post.ts
 │  │  ├─ Contact.ts
+│  │  ├─ Donation.ts
+│  │  ├─ Post.ts
+│  │  ├─ Team.ts
+│  │  ├─ User.ts
+│  │  └─ Volunteer.ts
 │  ├─ auth.ts
+│  ├─ db.ts
+│  └─ utils.ts
 ├─ public/
-│  ├─ logo.svg
-└─ tailwind.config.ts
+│  └─ ... (static assets)
+├─ .env.local
+├─ next.config.ts
+├─ package.json
+├─ tailwind.config.ts
+└─ tsconfig.json
