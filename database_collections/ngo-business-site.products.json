@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "6966556f7f1eb6db7904b7e4"
+  },
+  "name": "Community Health Camp",
+  "description": "Free medical checkups and medicines for rural families.",
+  "price": 0,
+  "category": "Health",
+  "available": true,
+  "createdAt": {
+    "$date": "2026-01-05T08:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6966556f7f1eb6db7904b7e5"
+  },
+  "name": "Handmade Crafts",
+  "description": "Products made by local artisans, supporting livelihoods.",
+  "price": 500,
+  "category": "Business",
+  "available": true,
+  "createdAt": {
+    "$date": "2026-01-07T09:00:00.000Z"
+  }
+}]

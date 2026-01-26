@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "6966555b7f1eb6db7904b7e0"
+  },
+  "name": "Rahim",
+  "email": "rahim@example.com",
+  "message": "I would like to volunteer for your education program.",
+  "handled": false,
+  "createdAt": {
+    "$date": "2026-01-13T12:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6966555b7f1eb6db7904b7e1"
+  },
+  "name": "Ayesha",
+  "email": "ayesha@example.com",
+  "message": "Can I donate books for the children?",
+  "handled": false,
+  "createdAt": {
+    "$date": "2026-01-13T13:00:00.000Z"
+  }
+}]

@@ -1,0 +1,115 @@
+[{
+  "_id": {
+    "$oid": "69751c7b9d848ba14c4bd862"
+  },
+  "name": "Abdullah Al-Mansur",
+  "role": "Founder & Executive Director",
+  "bio": "A social entrepreneur with over 10 years of experience in sustainable urban development in Dhaka. Goo Human Being",
+  "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+  "socials": {
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "order": 1,
+  "updatedAt": {
+    "$date": "2026-01-24T20:24:38.740Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69751c7b9d848ba14c4bd863"
+  },
+  "name": "Ayesha Siddiqua",
+  "role": "Head of Programs",
+  "bio": "Specializes in community-led health initiatives and educational outreach for underprivileged youth.",
+  "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop",
+  "socials": {
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "order": 2
+},
+{
+  "_id": {
+    "$oid": "69751c7b9d848ba14c4bd864"
+  },
+  "name": "Rahim Uddin",
+  "role": "Director of Operations",
+  "bio": "Expert in logistics and transparent resource allocation, ensuring donations reach those in need safely.",
+  "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+  "socials": {
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "order": 3
+},
+{
+  "_id": {
+    "$oid": "69751c7b9d848ba14c4bd865"
+  },
+  "name": "Nadia Hassan",
+  "role": "Volunteer Coordinator",
+  "bio": "Managing our growing network of 450+ volunteers with a focus on skill-based placement.",
+  "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+  "socials": {
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "order": 4
+},
+{
+  "_id": {
+    "$oid": "69752bbd9d848ba14c4bd867"
+  },
+  "name": "Sarah J. Karim",
+  "role": "Head of Communications",
+  "bio": "Expert in digital storytelling and public relations, ensuring our impact stories reach global supporters.",
+  "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+  "socials": {
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "order": 5
+},
+{
+  "_id": {
+    "$oid": "69752bbd9d848ba14c4bd868"
+  },
+  "name": "Zayan Ahmed",
+  "role": "Field Coordinator",
+  "bio": "Manages on-ground operations in Mirpur and Kurigram, bridging the gap between donors and community needs.",
+  "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+  "socials": {
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "order": 6
+},
+{
+  "_id": {
+    "$oid": "69752bbd9d848ba14c4bd869"
+  },
+  "name": "Fatima Zahra",
+  "role": "Finance Manager",
+  "bio": "Ensures 100% financial transparency and accountability, managing audits and donor fund allocation.",
+  "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop",
+  "socials": {
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "order": 7
+},
+{
+  "_id": {
+    "$oid": "69752bbd9d848ba14c4bd86a"
+  },
+  "name": "Imran Hossain",
+  "role": "Sustainability Lead",
+  "bio": "Develops long-term environmental strategies for our clean water and renewable energy projects.",
+  "image": "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=800&auto=format&fit=crop",
+  "socials": {
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "order": 8
+}]

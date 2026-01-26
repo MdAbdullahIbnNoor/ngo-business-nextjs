@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "696654e37f1eb6db7904b7d8"
+  },
+  "name": "Admin User",
+  "email": "admin@example.com",
+  "passwordHash": "$2b$10$GjXiviu3FTFIL23.XCuvQ.8Hut3xtTfSQVaHrjKFtpayKUcMxmprS",
+  "role": "admin"
+},
+{
+  "_id": {
+    "$oid": "69668def65c3a520ecbea285"
+  },
+  "name": "fdmdgldfgkdfg",
+  "email": "fgdfgdfg@example.com",
+  "passwordHash": "$2b$10$ZVwqf2zZA3I0NsBQ3kxTa.OH7V8Aoz6lYB9hRx01jLz1y49GsWCyW",
+  "createdAt": {
+    "$date": "2026-01-13T18:24:47.027Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-13T18:24:47.027Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,256 @@
+[{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e44"
+  },
+  "title": "Clean Water Reaches Over 5,000 Students in Mirpur",
+  "slug": "clean-water-reaches-mirpur-schools",
+  "excerpt": "Our latest water filtration project has successfully installed 12 industrial-grade systems, providing safe drinking water to underserved schools.",
+  "content": "<h1>Transforming Health through Hydration</h1>\n<p>In the heart of Mirpur, school children have long struggled with water-borne illnesses. Last month, our team completed the installation of UV-filtration systems across three primary schools.</p>\n\n<h3>The Challenge</h3>\n<p>Before this intervention, over 30% of students reported absences due to stomach infections. Clean drinking water was a luxury that many families could not afford at home, leading to a cycle of illness and missed education.</p>\n\n<h3>Our Impact</h3>\n<ul>\n  <li><strong>1,200+ Students</strong> now have daily access to safe water.</li>\n  <li><strong>Reduction in illness:</strong> Preliminary data shows a 40% drop in water-related clinic visits.</li>\n  <li><strong>Sustainability:</strong> We have trained local staff to maintain the UV-filters weekly.</li>\n</ul>\n\n<blockquote>\"Since the filters were installed, my daughter hasn't missed a single day of school. She feels stronger and more focused.\" — <em>Rahima, Local Parent</em></blockquote>\n\n<p>This project was made possible by our monthly donors. Together, we are ensuring that no child has to choose between their health and their education.</p>",
+  "category": "Impact Story",
+  "tags": [
+    "Clean Water",
+    "Health",
+    "Mirpur"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1559079236-2e64f89c7764?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Sarah Ahmed",
+    "role": "Project Manager",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": true,
+  "readingTime": 4,
+  "publishedAt": "2024-03-15T10:00:00Z",
+  "updatedAt": {
+    "$date": "2026-01-24T18:44:58.731Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e45"
+  },
+  "title": "The Future of Coding: Underprivileged Youth Graduate in Banani",
+  "slug": "youth-skills-lab-graduation-2024",
+  "excerpt": "Meet the 45 graduates who transitioned from zero tech background to junior developers through our 6-month intensive bootcamp.",
+  "content": "<h1>Breaking the Poverty Cycle with Code</h1><p>Education is the most powerful weapon. Our Youth Skills Lab recently celebrated its 4th graduation ceremony...</p>",
+  "category": "Education",
+  "tags": [
+    "Technology",
+    "Youth",
+    "Employment"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1753715613831-9e48eac86813?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Tanvir Rahman",
+    "role": "Lead Instructor",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 6,
+  "publishedAt": "2024-03-10T09:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e46"
+  },
+  "title": "Rooftop Farming: Cooling Dhaka’s Heat Islands",
+  "slug": "rooftop-farming-dhaka-sustainability",
+  "excerpt": "How urban greenery is lowering building temperatures by 5 degrees while providing fresh produce for local families.",
+  "content": "<h1>Concrete Jungles Turning Green</h1><p>Dhaka is one of the densest cities on earth. By utilizing rooftop spaces, we are fighting the urban heat island effect...</p>",
+  "category": "Sustainability",
+  "tags": [
+    "Environment",
+    "Urban Gardening",
+    "Climate"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1574324978413-3afb5ee3d7bd?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Naila Karim",
+    "role": "Environmental Consultant",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 5,
+  "publishedAt": "2024-03-05T08:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e47"
+  },
+  "title": "Fair Wages for Rural Artisans: The Digital Bridge",
+  "slug": "fair-wages-rural-artisans-digital",
+  "excerpt": "Our Ethical Trade Network is removing middlemen and connecting weavers directly to global markets.",
+  "content": "<h1>Empowering the Handmade</h1><p>Artisans in rural Bangladesh often lose their profits to intermediaries. Our new platform ensures transparent pricing...</p>",
+  "category": "Sustainability",
+  "tags": [
+    "Economic",
+    "Artisans",
+    "Fair Trade"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Fahim Shah",
+    "role": "Director of Operations",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 3,
+  "publishedAt": "2024-02-28T11:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e48"
+  },
+  "title": "Combating Winter: Emergency Relief Distribution",
+  "slug": "emergency-relief-winter-distribution",
+  "excerpt": "Over 2,000 blankets and winter kits were distributed to families in northern Bangladesh during the severe cold wave.",
+  "content": "<h1>Warmth for Every Family: Winter Relief Drive</h1>\n<p>When the temperature drops below 10 degrees, thousands in the northern districts face life-threatening conditions without proper shelter or clothing. This winter, our mission is to ensure no family is left in the cold.</p>\n\n<h3>The Current Crisis</h3>\n<p>In regions like Kurigram and Dinajpur, the seasonal cold wave disproportionately affects children and the elderly. Many families live in bamboo-walled huts that offer little protection against the biting winds.</p>\n\n<h3>Our Distribution Strategy</h3>\n<ul>\n  <li><strong>Heavy Blankets:</strong> Distributing 5,000 high-thermal blankets to rural households.</li>\n  <li><strong>Children's Kits:</strong> Providing sweaters, woolen caps, and socks to 2,000 students.</li>\n  <li><strong>Emergency Shelters:</strong> Setting up community heating centers in primary schools.</li>\n</ul>\n\n<h3>How Your Contribution Helps</h3>\n<p>A single blanket costs less than a meal out, but for a family in the north, it is a shield against illness. We are currently 60% toward our goal for the 2026 winter season.</p>\n\n<blockquote>\"The blanket we received is the first new one we've had in five years. My grandchildren can finally sleep through the night without shivering.\" — <em>Hasan Ali, Recipient</em></blockquote>",
+  "category": "News",
+  "tags": [
+    "Emergency",
+    "Winter",
+    "Relief"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1674922984018-9aa5e1680cc7?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Sarah Ahmed",
+    "role": "Project Manager",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 4,
+  "publishedAt": "2024-02-20T14:20:00Z",
+  "updatedAt": {
+    "$date": "2026-01-24T19:02:49.573Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e49"
+  },
+  "title": "Mobile Clinics: Healthcare at the Doorstep",
+  "slug": "mobile-clinics-healthcare-doorstep",
+  "excerpt": "Bringing essential maternal and child healthcare services to remote river islands (Chars) using our new clinic boats.",
+  "content": "<h1>Sailing for Health</h1><p>For the residents of river islands, the nearest hospital is often a 4-hour boat ride away. Our mobile clinics change that...</p>",
+  "category": "Health",
+  "tags": [
+    "Healthcare",
+    "Char Areas",
+    "Maternal Health"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1765233181361-a11f1e5b3c69?q=80&w=1544&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Dr. Amina Begum",
+    "role": "Medical Lead",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 5,
+  "publishedAt": "2024-02-15T09:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e4a"
+  },
+  "title": "5 Myths About Urban Waste Management",
+  "slug": "myths-urban-waste-management",
+  "excerpt": "Think recycling is enough? We dive into why community-led composting is the real key to a cleaner Dhaka.",
+  "content": "<h1>Rethinking Our Trash</h1><p>Waste management is more than just picking up plastic. It is about circularity and community behavior...</p>",
+  "category": "Sustainability",
+  "tags": [
+    "Environment",
+    "Waste Management",
+    "Dhaka"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1651996378349-4b76df4a2dc6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Naila Karim",
+    "role": "Environmental Consultant",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 7,
+  "publishedAt": "2024-02-10T12:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e4b"
+  },
+  "title": "From Street Child to Scholarship Student: Rafi’s Journey",
+  "slug": "rafi-journey-street-to-scholarship",
+  "excerpt": "An emotional look at how a simple mentorship program changed the life of one young boy living near Kamalapur station.",
+  "content": "<h1>A Second Chance</h1><p>Rafi spent his days collecting plastic bottles. Today, he is the top of his class at our Hope Learning Center...</p>",
+  "category": "Impact Story",
+  "tags": [
+    "Education",
+    "Inspiration",
+    "Youth"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1659080907097-6153cd4ff69d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Tanvir Rahman",
+    "role": "Lead Instructor",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 8,
+  "publishedAt": "2024-02-01T10:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e4c"
+  },
+  "title": "Why Financial Literacy is Essential for Women",
+  "slug": "financial-literacy-essential-women",
+  "excerpt": "Empowering women with the tools to manage savings, access micro-loans, and grow their small businesses.",
+  "content": "<h1>Power Through Knowledge</h1><p>Financial independence is the cornerstone of women's empowerment in rural communities...</p>",
+  "category": "News",
+  "tags": [
+    "Finance",
+    "Women Empowerment",
+    "Business"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?q=80&w=1102&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Fahim Shah",
+    "role": "Director of Operations",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 5,
+  "publishedAt": "2024-01-25T15:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "6973bf416424e1710b146e4d"
+  },
+  "title": "Partnering for Progress: New Tech Alliances",
+  "slug": "partnering-for-progress-tech-alliances",
+  "excerpt": "We are proud to announce new partnerships with local tech startups to provide internships for our graduates.",
+  "content": "<h1>Bridging the Gap</h1><p>The bridge between education and employment is often broken. Our new corporate partnerships aim to fix that...</p>",
+  "category": "News",
+  "tags": [
+    "Partnerships",
+    "Technology",
+    "Jobs"
+  ],
+  "coverImage": "https://images.unsplash.com/photo-1673515336414-0db19994707f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "author": {
+    "name": "Tanvir Rahman",
+    "role": "Lead Instructor",
+    "image": "https://images.unsplash.com/photo-1631588310958-dec1630f8df5?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "published": true,
+  "isFeatured": false,
+  "readingTime": 4,
+  "publishedAt": "2024-01-15T11:00:00Z"
+}]
