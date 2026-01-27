@@ -3,6 +3,8 @@ import { Plus, Edit3, Calendar, Tag } from 'lucide-react';
 import { connectDB } from '@/lib/db';
 import Post from '@/lib/models/Post';
 
+export const dynamic = 'force-dynamic';
+
 async function getPosts() {
   await connectDB();
   // Fetch and convert to plain objects to avoid serialization issues

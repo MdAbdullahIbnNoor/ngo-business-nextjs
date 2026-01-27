@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import BlogList from '@/app/components/BlogList'; // We'll create this next
+export const dynamic = 'force-dynamic';
 
 async function getPosts() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';

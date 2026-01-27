@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { ArrowRight, Heart, Users, Leaf, Globe } from "lucide-react";
 
+export const dynamic = 'force-dynamic';
+
 // 1. Fetch function for the dynamic programs
 async function getPrograms() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';

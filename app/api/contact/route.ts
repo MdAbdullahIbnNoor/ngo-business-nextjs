@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { connectDB } from '@/lib/db';
 import Contact from '@/lib/models/Contact'; // Create this model if you haven't
-
+export const dynamic = 'force-dynamic';
 // GET: Fetch all submissions for the Admin page
 export async function GET() {
   try {

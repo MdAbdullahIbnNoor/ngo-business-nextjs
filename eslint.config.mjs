@@ -12,7 +12,7 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    "public/bycript.js" // Added this because it was causing a require() error
+    "public/bycript.js", // Added this because it was causing a require() error
   ]),
 
   // 2. CUSTOM RULES (To fix your "any" and "unescaped entities" errors)

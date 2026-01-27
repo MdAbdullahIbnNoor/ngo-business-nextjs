@@ -2,6 +2,7 @@ import { connectDB } from "@/lib/db";
 import Volunteer from "@/lib/models/Volunteer";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+export const dynamic = 'force-dynamic';
 
 export default async function VolunteerDetailsPage({
     params,

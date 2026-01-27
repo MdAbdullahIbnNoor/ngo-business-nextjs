@@ -1,5 +1,5 @@
 "use client";
-
+export const dynamic = 'force-dynamic';
 import { useState } from "react";
 import { Check, X, MapPin, MessageSquare, Clock, Inbox, CheckCircle2, XCircle } from "lucide-react";
 
@@ -41,8 +41,8 @@ export default function VolunteerList({ initialData }: { initialData: any[] }) {
                         key={tab.id}
                         onClick={() => setActiveTab(tab.id as any)}
                         className={`flex items-center gap-2 px-6 py-4 text-sm font-bold transition-all border-b-2 ${activeTab === tab.id
-                                ? 'border-primary text-primary'
-                                : 'border-transparent text-slate-500 hover:text-slate-700'
+                            ? 'border-primary text-primary'
+                            : 'border-transparent text-slate-500 hover:text-slate-700'
                             }`}
                     >
                         <tab.icon size={18} className={activeTab === tab.id ? 'text-primary' : tab.color} />
@@ -65,7 +65,7 @@ export default function VolunteerList({ initialData }: { initialData: any[] }) {
                         <div
                             key={v._id}
                             className={`group relative overflow-hidden rounded-[2rem] border p-8 transition-all duration-300 bg-white dark:bg-slate-900 ${v.status === "accepted" ? "border-green-200" :
-                                    v.status === "rejected" ? "border-red-100" : "border-slate-200"
+                                v.status === "rejected" ? "border-red-100" : "border-slate-200"
                                 }`}
                         >
                             <div className="flex flex-wrap items-start justify-between gap-6">

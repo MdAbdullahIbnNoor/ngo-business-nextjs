@@ -1,6 +1,7 @@
 import { connectDB } from "@/lib/db";
 import Volunteer from "@/lib/models/Volunteer";
 import VolunteerList from "../../../components/VolunteerList";
+export const dynamic = 'force-dynamic';
 
 export default async function AdminVolunteersPage() {
     await connectDB();

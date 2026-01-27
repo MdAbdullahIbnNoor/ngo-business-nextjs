@@ -17,7 +17,7 @@ ngo-business-site/
 │  │     │  ├─ new/
 │  │     │  └─ page.tsx          # Manage team
 │  │     ├─ volunteers/
-│  │     │  ├─ [id]/
+│  │     │  ├─ [id]/page.tsx     # Volunteer details
 │  │     │  └─ page.tsx          # Manage volunteers
 │  │     ├─ layout.tsx           # Admin layout
 │  │     └─ page.tsx             # Admin Dashboard

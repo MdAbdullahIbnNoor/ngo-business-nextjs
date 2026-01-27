@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft, MapPin, Target, CheckCircle2, Calendar, Share2, Users, Clock, Zap, Quote } from 'lucide-react';
+export const dynamic = 'force-dynamic';
 
 // 1. Fetch function to get specific program data
 async function getProgramData(slug: string) {

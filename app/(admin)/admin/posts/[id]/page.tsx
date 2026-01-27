@@ -1,9 +1,11 @@
 'use client';
-
+export const dynamic = 'force-dynamic';
 import { useEffect, useState, use } from 'react';
 import { useRouter } from 'next/navigation';
 import { Save, Trash2, ArrowLeft, Image as ImageIcon, Link as LinkIcon, AlertCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
+
 
 export default function EditPostPage({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = use(params);

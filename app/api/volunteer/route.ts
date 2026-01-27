@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { connectDB } from '@/lib/db';
 import Volunteer from '@/lib/models/Volunteer'; // Ensure lowercase matches your filename if applicable
-
+export const dynamic = 'force-dynamic';
 // --- GET: Fetch all applications for Admin ---
 export async function GET() {
     try {
