@@ -8,7 +8,8 @@ export const dynamic = 'force-dynamic';
 
 export default async function AboutPage() {
   await connectDB();
-  const teamMembers = await Team.find().sort({ order: 1 }).lean();
+  const rawMembers = await Team.find().sort({ order: 1 }).lean();
+  const teamMembers = JSON.parse(JSON.stringify(rawMembers));
   console.log("Team Members found:", teamMembers.length);
   const stats = [
     { label: 'Projects Completed', value: '120+', icon: Globe },

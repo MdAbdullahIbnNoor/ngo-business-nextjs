@@ -8,7 +8,8 @@ export const dynamic = 'force-dynamic';
 
 export default async function AdminTeamPage() {
     await connectDB();
-    const members = await Team.find().sort({ order: 1 }).lean();
+    const rawMembers = await Team.find().sort({ order: 1 }).lean();
+    const members = JSON.parse(JSON.stringify(rawMembers));
 
     return (
         <main className="mx-auto max-w-5xl px-6 py-24">
