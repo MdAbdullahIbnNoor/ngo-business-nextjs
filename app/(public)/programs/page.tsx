@@ -1,16 +1,14 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 export const dynamic = 'force-dynamic';
-
-
-import path from 'path';
-import { promises as fs } from 'fs';
+import { connectDB } from '@/lib/db';
+import Program from '@/lib/models/Program';
 
 async function getPrograms() {
+    await connectDB();
     try {
-        const filePath = path.join(process.cwd(), 'public', 'programsData.json');
-        const fileContents = await fs.readFile(filePath, 'utf8');
-        return JSON.parse(fileContents);
+        const programs = await Program.find().lean();
+        return JSON.parse(JSON.stringify(programs));
     } catch (error) {
         throw new Error('Failed to fetch programs data');
     }
@@ -38,7 +36,7 @@ export default async function ProgramsPage() {
                 <div className="grid gap-8">
                     {programs.map((p: any) => (
                         <div
-                            key={p.id}
+                            key={p._id?.toString() || p.slug || Math.random()}
                             className="group grid grid-cols-1 overflow-hidden rounded-2xl border bg-card transition-all hover:border-primary/30 hover:shadow-md md:grid-cols-3 md:h-64"
                         >
                             {/* --- IMAGE AREA (Takes up 1 of 3 columns) --- */}
@@ -78,7 +76,7 @@ export default async function ProgramsPage() {
                                     </div>
 
                                     <Link
-                                        href={`/programs/${p.id}`}
+                                        href={`/programs/${p.slug || p._id.toString()}`}
                                         className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-all hover:bg-primary/90"
                                     >
                                         View Details

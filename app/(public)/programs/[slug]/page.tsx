@@ -3,18 +3,25 @@ import Link from 'next/link';
 import { ArrowLeft, MapPin, Target, CheckCircle2, Calendar, Share2, Users, Clock, Zap, Quote } from 'lucide-react';
 export const dynamic = 'force-dynamic';
 
-import path from 'path';
-import { promises as fs } from 'fs';
+import { connectDB } from '@/lib/db';
+import Program from '@/lib/models/Program';
+import mongoose from 'mongoose';
 
 // 1. Fetch function to get specific program data
-async function getProgramData(slug: string) {
+async function getProgramData(identifier: string) {
+    await connectDB();
     try {
-        const filePath = path.join(process.cwd(), 'public', 'programsData.json');
-        const fileContents = await fs.readFile(filePath, 'utf8');
-        const programs = JSON.parse(fileContents);
-        return programs.find((p: any) => p.id === slug);
+        // Try finding by slug first
+        let program = await Program.findOne({ slug: identifier }).lean();
+
+        // If not found and identifier is a valid ObjectId, try finding by _id
+        if (!program && mongoose.Types.ObjectId.isValid(identifier)) {
+            program = await Program.findById(identifier).lean();
+        }
+
+        return program ? JSON.parse(JSON.stringify(program)) : undefined;
     } catch (error) {
-        console.error("Error reading programs data:", error);
+        console.error("Error reading program data from DB:", error);
         return undefined;
     }
 }

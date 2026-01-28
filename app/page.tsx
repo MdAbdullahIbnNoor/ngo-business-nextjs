@@ -5,17 +5,16 @@ import { ArrowRight, Heart, Users, Leaf, Globe } from "lucide-react";
 
 export const dynamic = 'force-dynamic';
 
-// 1. Fetch function for the dynamic programs
-import path from 'path';
-import { promises as fs } from 'fs';
+import { connectDB } from '@/lib/db';
+import Program from '@/lib/models/Program';
 
 async function getPrograms() {
+  await connectDB();
   try {
-    const filePath = path.join(process.cwd(), 'public', 'programsData.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    const programs = await Program.find().lean();
+    return JSON.parse(JSON.stringify(programs));
   } catch (error) {
-    console.error("Error reading programs data:", error);
+    console.error("Error fetching programs from DB:", error);
     return [];
   }
 }
@@ -98,7 +97,7 @@ export default async function HomePage() {
 
           <div className="grid gap-8 md:grid-cols-3">
             {corePrograms.map((program: any) => (
-              <Card key={program.id} className="group overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 flex flex-col pt-0">
+              <Card key={program._id?.toString() || program.slug} className="group overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 flex flex-col pt-0">
                 <div className="relative h-44 overflow-hidden object-cover mt-0">
                   <img
                     src={program.image}
@@ -122,7 +121,7 @@ export default async function HomePage() {
                   </p>
                   <div className="mt-auto">
                     <Button variant="link" className="p-0 h-auto font-semibold text-primary group-hover:text-primary/80" asChild>
-                      <Link href={`/programs/${program.id}`} className="flex items-center gap-2">
+                      <Link href={`/programs/${program.slug || program._id.toString()}`} className="flex items-center gap-2">
                         Learn more <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </Button>
