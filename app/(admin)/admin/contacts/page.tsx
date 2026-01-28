@@ -1,11 +1,12 @@
 export const dynamic = 'force-dynamic';
 
-async function getContacts() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  const res = await fetch(`${baseUrl}/api/contact`, { cache: 'no-store' });
+import { connectDB } from '@/lib/db';
+import Contact from '@/lib/models/Contact';
 
-  if (!res.ok) return []; // Return empty array if API fails
-  return res.json();
+async function getContacts() {
+  await connectDB();
+  const contacts = await Contact.find().sort({ createdAt: -1 }).lean();
+  return JSON.parse(JSON.stringify(contacts));
 }
 
 export default async function AdminContacts() {

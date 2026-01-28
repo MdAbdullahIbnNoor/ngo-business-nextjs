@@ -3,11 +3,13 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import BlogList from '@/app/components/BlogList'; // We'll create this next
 export const dynamic = 'force-dynamic';
 
+import { connectDB } from '@/lib/db';
+import Post from '@/lib/models/Post';
+
 async function getPosts() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
-  const res = await fetch(`${baseUrl}/api/posts`, { cache: 'no-store' });
-  if (!res.ok) return [];
-  return res.json();
+  await connectDB();
+  const posts = await Post.find().sort({ createdAt: -1 }).lean();
+  return JSON.parse(JSON.stringify(posts));
 }
 
 export default async function BlogPage() {

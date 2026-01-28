@@ -3,14 +3,17 @@ import { ArrowRight } from 'lucide-react';
 export const dynamic = 'force-dynamic';
 
 
-async function getPrograms() {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-    const res = await fetch(`${baseUrl}/programsData.json`, {
-        next: { revalidate: 3600 }
-    });
+import path from 'path';
+import { promises as fs } from 'fs';
 
-    if (!res.ok) throw new Error('Failed to fetch programs data');
-    return res.json();
+async function getPrograms() {
+    try {
+        const filePath = path.join(process.cwd(), 'public', 'programsData.json');
+        const fileContents = await fs.readFile(filePath, 'utf8');
+        return JSON.parse(fileContents);
+    } catch (error) {
+        throw new Error('Failed to fetch programs data');
+    }
 }
 
 export default async function ProgramsPage() {

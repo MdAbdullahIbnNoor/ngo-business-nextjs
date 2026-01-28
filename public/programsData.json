@@ -1,6 +1,5 @@
 [
     {
-        "id": "clean-water",
         "title": "Clean Water Initiative",
         "category": "Sustainability",
         "image": "https://images.unsplash.com/photo-1654220691341-be23a137bd0c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -30,7 +29,6 @@
         }
     },
     {
-        "id": "youth-skills-lab",
         "title": "Youth Skills Lab",
         "category": "Education",
         "image": "https://images.unsplash.com/photo-1719159381981-1327b22aff9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -60,7 +58,6 @@
         }
     },
     {
-        "id": "ethical-trade-network",
         "title": "Ethical Trade Network",
         "category": "Economic",
         "image": "https://images.unsplash.com/photo-1768055104895-e6185762f2a9?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -90,7 +87,6 @@
         }
     },
     {
-        "id": "urban-greenery",
         "title": "Urban Greenery Project",
         "category": "Environment",
         "image": "https://images.unsplash.com/photo-1542800952-e5471ed41326?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

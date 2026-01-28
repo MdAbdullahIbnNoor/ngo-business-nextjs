@@ -3,21 +3,18 @@ import Link from 'next/link';
 import { ArrowLeft, MapPin, Target, CheckCircle2, Calendar, Share2, Users, Clock, Zap, Quote } from 'lucide-react';
 export const dynamic = 'force-dynamic';
 
+import path from 'path';
+import { promises as fs } from 'fs';
+
 // 1. Fetch function to get specific program data
 async function getProgramData(slug: string) {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-
     try {
-        const res = await fetch(`${baseUrl}/programsData.json`, {
-            next: { revalidate: 3600 }
-        });
-
-        if (!res.ok) return undefined;
-
-        const programs = await res.json();
+        const filePath = path.join(process.cwd(), 'public', 'programsData.json');
+        const fileContents = await fs.readFile(filePath, 'utf8');
+        const programs = JSON.parse(fileContents);
         return programs.find((p: any) => p.id === slug);
     } catch (error) {
-        console.error("Fetch error:", error);
+        console.error("Error reading programs data:", error);
         return undefined;
     }
 }

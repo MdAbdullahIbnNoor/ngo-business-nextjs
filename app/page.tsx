@@ -6,16 +6,16 @@ import { ArrowRight, Heart, Users, Leaf, Globe } from "lucide-react";
 export const dynamic = 'force-dynamic';
 
 // 1. Fetch function for the dynamic programs
+import path from 'path';
+import { promises as fs } from 'fs';
+
 async function getPrograms() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
   try {
-    const res = await fetch(`${baseUrl}/programsData.json`, {
-      next: { revalidate: 3600 } // Refresh data every hour
-    });
-    if (!res.ok) return [];
-    return await res.json();
+    const filePath = path.join(process.cwd(), 'public', 'programsData.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
   } catch (error) {
-    console.error("Error fetching programs:", error);
+    console.error("Error reading programs data:", error);
     return [];
   }
 }
