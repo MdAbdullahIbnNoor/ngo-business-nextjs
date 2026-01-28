@@ -3,6 +3,8 @@ import { connectDB } from "@/lib/db";
 import Team from "@/lib/models/Team";
 import { notFound } from "next/navigation";
 
+export const dynamic = 'force-dynamic';
+
 export default async function EditMemberPage({ params }: { params: Promise<{ id: string }> }) {
     await connectDB();
     const { id } = await params;

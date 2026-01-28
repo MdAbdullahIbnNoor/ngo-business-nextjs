@@ -1,7 +1,10 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { connectDB } from '@/lib/db';
 import Team from '@/lib/models/Team';
 import { Users, Target, Heart, ArrowRight, ShieldCheck, Globe, Linkedin, Twitter } from 'lucide-react';
+
+export const dynamic = 'force-dynamic';
 
 export default async function AboutPage() {
   await connectDB();
@@ -92,10 +95,11 @@ export default async function AboutPage() {
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {teamMembers.map((m: any) => (
                 <div key={m._id.toString()} className="group overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white p-2 transition-all hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
-                  <div className="aspect-square overflow-hidden rounded-[2rem]">
-                    <img
+                  <div className="aspect-square overflow-hidden rounded-[2rem] relative">
+                    <Image
                       src={m.image}
                       alt={m.name}
+                      fill
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
@@ -107,7 +111,7 @@ export default async function AboutPage() {
                       </h3>
 
                       {/* Social Icons Container */}
-                      <div className="flex gap-3 pt-1 shrink-0">
+                      <div className="flex gap-3 pt-1 shrink-0 z-20">
                         {m.socials?.linkedin && (
                           <a
                             href={m.socials.linkedin === "#" ? undefined : m.socials.linkedin}

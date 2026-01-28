@@ -1,7 +1,10 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Plus, Edit2, Trash2, UserCircle } from 'lucide-react';
 import { connectDB } from '@/lib/db';
 import Team from '@/lib/models/Team';
+
+export const dynamic = 'force-dynamic';
 
 export default async function AdminTeamPage() {
     await connectDB();
@@ -26,11 +29,14 @@ export default async function AdminTeamPage() {
                 {members.map((m: any) => (
                     <div key={m._id.toString()} className="flex items-center justify-between rounded-2xl border bg-white p-4 dark:bg-slate-900">
                         <div className="flex items-center gap-4">
-                            <img
-                                src={m.image}
-                                alt={m.name}
-                                className="h-12 w-12 rounded-full object-cover"
-                            />
+                            <div className="relative h-12 w-12 overflow-hidden rounded-full">
+                                <Image
+                                    src={m.image}
+                                    alt={m.name}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
                             <div>
                                 <h3 className="font-bold">{m.name}</h3>
                                 <p className="text-xs text-primary font-semibold uppercase">{m.role}</p>

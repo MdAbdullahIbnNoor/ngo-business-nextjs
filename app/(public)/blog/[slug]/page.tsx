@@ -2,7 +2,10 @@ import { connectDB } from '@/lib/db';
 import Post from '@/lib/models/Post';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Share2, Calendar, User, Clock, Tag } from 'lucide-react';
+
+export const dynamic = 'force-dynamic';
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -60,11 +63,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
         {/* --- Featured Image --- */}
         {post.coverImage && (
-          <div className="mb-12 overflow-hidden rounded-[2.5rem] border shadow-2xl">
-            <img
+          <div className="mb-12 overflow-hidden rounded-[2.5rem] border shadow-2xl relative aspect-video">
+            <Image
               src={post.coverImage}
               alt={post.title}
-              className="aspect-video w-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
         )}
@@ -73,7 +77,14 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <div className="mb-12 flex items-center justify-between border-y border-slate-100 py-8">
           <div className="flex items-center gap-4">
             {post.author?.image ? (
-              <img src={post.author.image} alt={post.author.name} className="h-12 w-12 rounded-full object-cover ring-2 ring-primary/10" />
+              <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-primary/10">
+                <Image
+                  src={post.author.image}
+                  alt={post.author.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
             ) : (
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary font-bold">
                 <User className="h-6 w-6" />
