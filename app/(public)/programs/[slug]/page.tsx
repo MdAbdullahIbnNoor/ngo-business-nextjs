@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, MapPin, Target, CheckCircle2, Calendar, Share2, Users, Clock, Zap, Quote } from 'lucide-react';
+import { Metadata } from 'next';
 export const dynamic = 'force-dynamic';
 
 import { connectDB } from '@/lib/db';
@@ -24,6 +26,29 @@ async function getProgramData(identifier: string) {
         console.error("Error reading program data from DB:", error);
         return undefined;
     }
+}
+
+export async function generateMetadata(
+    { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+    const resolvedParams = await params;
+    const program = await getProgramData(resolvedParams.slug);
+
+    if (!program) {
+        return {
+            title: 'Program Not Found',
+        };
+    }
+
+    return {
+        title: `${program.title} | NGO Business`,
+        description: program.description,
+        openGraph: {
+            title: program.title,
+            description: program.description,
+            images: [program.image],
+        },
+    };
 }
 
 export default async function ProgramDetailPage({
@@ -61,13 +86,15 @@ export default async function ProgramDetailPage({
             {/* Hero Section */}
             <section className="mx-auto mt-8 max-w-5xl px-6">
                 <div className="relative h-[300px] w-full overflow-hidden rounded-3xl md:h-[450px]">
-                    <img
+                    <Image
                         src={program.image}
                         alt={program.title}
-                        className="h-full w-full object-cover"
+                        fill
+                        priority
+                        className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                    <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10 text-white">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10" />
+                    <div className="absolute bottom-6 left-6 right-6 md:bottom-10 md:left-10 text-white z-20">
                         <span className="inline-block rounded-full bg-primary px-4 py-1.5 text-xs font-bold uppercase tracking-widest">
                             {program.category}
                         </span>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { ArrowRight, Heart, Users, Leaf, Globe } from "lucide-react";
@@ -29,14 +30,18 @@ export default async function HomePage() {
     <main className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=1500&auto=format&fit=crop"
+            alt="Hero Background"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-start text-left">
+        <div className="relative z-20 container mx-auto px-4 md:px-6 flex flex-col items-start text-left">
           <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary-foreground backdrop-blur-sm mb-6">
             <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
             Empowering Communities Globally
@@ -98,13 +103,14 @@ export default async function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             {corePrograms.map((program: any) => (
               <Card key={program._id?.toString() || program.slug} className="group overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 flex flex-col pt-0">
-                <div className="relative h-44 overflow-hidden object-cover mt-0">
-                  <img
+                <div className="relative h-44 overflow-hidden mt-0">
+                  <Image
                     src={program.image}
                     alt={program.title}
-                    className="w-full h-52 object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4">
+                  <div className="absolute top-4 left-4 z-10">
                     <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-primary shadow-sm">
                       {program.category}
                     </span>

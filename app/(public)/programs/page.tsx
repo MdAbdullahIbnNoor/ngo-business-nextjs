@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 export const dynamic = 'force-dynamic';
 import { connectDB } from '@/lib/db';
@@ -41,9 +42,10 @@ export default async function ProgramsPage() {
                         >
                             {/* --- IMAGE AREA (Takes up 1 of 3 columns) --- */}
                             <div className="relative h-64 w-full overflow-hidden bg-muted md:h-full">
-                                <img
+                                <Image
                                     src={p.image}
                                     alt={p.title}
+                                    fill
                                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
                             </div>
