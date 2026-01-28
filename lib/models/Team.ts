@@ -12,7 +12,7 @@ const TeamSchema = new Schema({
     order: { type: Number, default: 0 }
 }, {
     timestamps: true,
-    collection: 'team'
+    collection: 'teams'
 });
 
-export default models.team || model('team', TeamSchema);
+export default models.Team || model('Team', TeamSchema);
